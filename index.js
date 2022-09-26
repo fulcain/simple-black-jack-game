@@ -9,7 +9,9 @@ let cardsEl = document.querySelector("#cards")
 let sumEl = document.querySelector("#sum-el")
 
 
-
+function restartGame(){
+    location.reload()
+}
 function getRandomCard() {
     let randomNumber = Math.floor(Math.random() * 13) + 1
     if (randomNumber > 10) {
