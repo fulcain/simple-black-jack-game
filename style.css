@@ -43,7 +43,7 @@ button {
     background-color: goldenrod;
     cursor: pointer;
     font-weight: bold;
-    border-radius: 2px;
+    border-radius: 5px;
     padding: 10px 20px;
     border: none;
 }
@@ -51,7 +51,31 @@ button {
 button:active {
     background-color: gold;
 }
-#player-el{
+
+#player-el {
     color: yellow;
     font-size: 20px;
+}
+
+/* responsive */
+@media screen and (max-width:768px) {
+    .container{
+        width:600px;
+    }
+}
+@media screen and (max-width:425px) {
+    .container{
+        width:300px;
+    }
+    #message-el{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:375px) {
+    .container{
+        width:250px;
+    }
+    #message-el{
+        font-size: 14px;
+    }
 }
