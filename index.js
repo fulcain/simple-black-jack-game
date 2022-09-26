@@ -11,6 +11,14 @@ let sumEl = document.querySelector("#sum-el")
 
 function restartGame(){
     location.reload()
+
+}
+function gameEnds(){
+    setTimeout(function(){restartGame();}, 5000)
+    setTimeout(function(){alertMessage();}, 1000)
+    function alertMessage(){
+        alert('The game is over! click ok to restart the game')
+    }
 }
 function getRandomCard() {
     let randomNumber = Math.floor(Math.random() * 13) + 1
@@ -37,10 +45,12 @@ function renderGame() {
     } else if (sum === 21) {
         messageEl.textContent = "You've got BlackJack!"
         hasBlackJack = true
+        gameEnds();
     } else {
         messageEl.textContent = "You are out of the game!"
         isAlive = false
-        setTimeout(function(){restartGame();}, 5000)
+        gameEnds();
+  
     }
 
     cardsEl.textContent = "Cards: "
