@@ -12,6 +12,7 @@ body {
 .container {
     width: 1000px;
     margin: 0 auto;
+    position: relative;
 }
 
 h1 {
@@ -57,14 +58,13 @@ button:active {
     font-size: 20px;
 }
 /* dealer man */
-button:first-of-type{
-    position: relative;
-}
+
 .dealerman img{
     position: absolute;
-    top: -92px;
-    left: -56px;
-    width: 130px;
+    top: 131px;
+    left:390px;
+
+    width: 100px;
 }
 /* responsive */
 @media screen and (max-width:768px) {
