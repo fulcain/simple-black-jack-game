@@ -14,7 +14,7 @@ function restartGame(){
 
 }
 function gameEnds(){
-    setTimeout(function(){restartGame();}, 5000)
+    setTimeout(function(){restartGame();}, 2000)
     setTimeout(function(){alertMessage();}, 1000)
     function alertMessage(){
         alert('The game is over! click ok to restart the game')
