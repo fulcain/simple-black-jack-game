@@ -40,6 +40,7 @@ function renderGame() {
     } else {
         messageEl.textContent = "You are out of the game!"
         isAlive = false
+        setTimeout(function(){restartGame();}, 5000)
     }
 
     cardsEl.textContent = "Cards: "
