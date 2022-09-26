@@ -8,13 +8,6 @@ let messageEl = document.querySelector("#message-el")
 let cardsEl = document.querySelector("#cards")
 let sumEl = document.querySelector("#sum-el")
 
-let playerEl = document.querySelector('#player-el')
-
-let player = {
-    name: "fulcain",
-    chips: 125
-}
-playerEl.textContent = player.name + ": $" + player.chips
 
 
 function getRandomCard() {
