@@ -1,0 +1,57 @@
+body {
+    background-image: url(blackjackbg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    font-family: 'Trebuchet MS';
+    font-weight: bold;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: goldenrod;
+}
+
+/* main */
+main {
+    margin-top: 100px;
+    text-align: center;
+}
+
+#message-el {
+    font-style: italic;
+    font-size: 25px;
+    color: gold;
+}
+
+#sum-el,
+#cards {
+    font-size: 20px;
+    color: white;
+}
+
+button {
+    margin-bottom: 10px;
+    color: #016f32;
+    width: 150px;
+    background-color: goldenrod;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 10px 20px;
+    border: none;
+}
+
+button:active {
+    background-color: gold;
+}
+#player-el{
+    color: yellow;
+    font-size: 20px;
+}
