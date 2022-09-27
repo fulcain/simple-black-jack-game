@@ -3,22 +3,19 @@ let cards = []
 let sum = 0
 let hasBlackJack = false
 let isAlive = false
-let message = ""
 let messageEl = document.querySelector("#message-el")
 let cardsEl = document.querySelector("#cards")
 let sumEl = document.querySelector("#sum-el")
 
 
 function restartGame(){
-    location.reload()
+    cardsEl.textContent = "Crads: "
+    sumEl.textContent = "Sum: "
+    messageEl.textContent = "Want to play a round?"
 
 }
 function gameEnds(){
     setTimeout(function(){restartGame();}, 2000)
-    setTimeout(function(){alertMessage();}, 1000)
-    function alertMessage(){
-        alert('The game is over! click ok to restart the game')
-    }
 }
 function getRandomCard() {
     let randomNumber = Math.floor(Math.random() * 13) + 1
